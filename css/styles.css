@@ -30,6 +30,7 @@ ol {
 }
 
 .header {
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .container {
@@ -118,6 +119,9 @@ ol {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
+  display: block;
+  margin: 0 auto;
+  padding: 188px 331px 48px;
 }
 
 .hero-button {
@@ -128,6 +132,12 @@ ol {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #fff;
+  display: block;
+  margin: 0 auto 188px;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  padding: 16px 32px;
 }
 
 .hero-button:hover,
@@ -160,6 +170,8 @@ ol {
 }
 
 .advantages {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .advantages-list {
@@ -180,9 +192,14 @@ ol {
 
 .team-title {
   text-transform: capitalize;
+  display: block;
+  margin: 0 auto;
+  padding-top: 120px;
+  padding-bottom: 72px;
 }
 
 .team-list {
+  padding-bottom: 120px;
 }
 
 .team-item {
@@ -191,10 +208,15 @@ ol {
 
 .team-subtitle {
   text-align: center;
+  padding-top: 32px;
+  padding-bottom: 8px;
+  margin: 0 auto;
 }
 
 .team-item-text {
   text-align: center;
+  margin: 0 auto;
+  padding-bottom: 32px;
 }
 
 .portfolio {
@@ -202,18 +224,28 @@ ol {
 
 .portfolio-title {
   text-transform: capitalize;
+  display: block;
+  margin: 0 auto;
+  padding-top: 124px;
+  padding-bottom: 68px;
 }
 
 .portfolio-list {
+  padding-bottom: 120px;
 }
 
 .portfolio-item {
 }
 
 .portfolio-subtitle {
+  margin: 0 auto;
+  padding-top: 32px;
+  padding-bottom: 8px;
 }
 
 .portfolio-item-text {
+  margin: 0 auto;
+  padding-bottom: 32px;
 }
 
 .footer {
