@@ -147,6 +147,7 @@ img {
   border: none;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   padding: 16px 32px;
+  min-width: 169px;
 }
 
 .hero-button:hover,
@@ -193,7 +194,7 @@ img {
 }
 
 .advantages-item {
-  width: calc((1128px - 3 * 24px) / 4);
+  width: calc((100% - 3 * 24px) / 4);
 }
 
 .advantages-subtitle {
@@ -225,31 +226,32 @@ img {
   border-radius: 0 0 4px 4px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-  width: calc((1128px - 3 * 24px) / 4);
+  width: calc((100% - 3 * 24px) / 4);
+}
+
+.team-card {
+  padding: 32px 0;
 }
 
 .team-subtitle {
   text-align: center;
-  padding-top: 32px;
-  padding-bottom: 8px;
-  margin: 0 auto;
+  margin-bottom: 8px;
 }
 
 .team-item-text {
   text-align: center;
-  margin: 0 auto;
-  padding-bottom: 32px;
 }
 
 .portfolio {
-  padding-top: 124px;
+  padding-top: 120px;
   padding-bottom: 120px;
 }
 
 .portfolio-title {
   text-transform: capitalize;
   display: block;
-  margin: 0 auto 68px;
+  margin: 0 auto;
+  margin-bottom: 72px;
 }
 
 .portfolio-list {
@@ -259,13 +261,13 @@ img {
 }
 
 .portfolio-item {
-  border: 1px solid #e7e9fc;
-  width: calc((1128px - 2 * 24px) / 3);
+  width: calc((100% - 2 * 24px) / 3);
 }
 
 .portfolio-card {
   display: flex;
   flex-direction: column;
+  border: 1px solid #e7e9fc;
   padding: 32px 16px;
 }
 
@@ -278,7 +280,7 @@ img {
 
 .footer {
   background-color: #2e2f42;
-  padding: 100px 156px;
+  padding: 100px 0;
 }
 
 .logo-part-footer {
@@ -288,10 +290,11 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #f4f4fd;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .footer-text {
   color: #f4f4fd;
   max-width: 264px;
-  margin-top: 8px;
 }
