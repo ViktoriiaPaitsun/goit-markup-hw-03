@@ -15,6 +15,12 @@ ol {
   margin: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -35,7 +41,8 @@ ol {
 
 .container {
   width: 1158px;
-  padding: 15px;
+  padding-right: 15px;
+  padding-left: 15px;
   margin: 0 auto;
 }
 
@@ -110,6 +117,8 @@ ol {
 
 .hero {
   background-color: #2e2f42;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .hero-title {
@@ -120,8 +129,8 @@ ol {
   text-align: center;
   color: #fff;
   display: block;
-  margin: 0 auto;
-  padding: 188px 331px 48px;
+  margin: 0 auto 48px;
+  max-width: 496px;
 }
 
 .hero-button {
@@ -133,7 +142,7 @@ ol {
   letter-spacing: 0.04em;
   color: #fff;
   display: block;
-  margin: 0 auto 188px;
+  margin: 0 auto;
   border-radius: 4px;
   border: none;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
@@ -160,6 +169,8 @@ ol {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding: 0;
+  margin: 0;
 }
 
 .text {
@@ -167,6 +178,8 @@ ol {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  padding: 0;
+  margin: 0;
 }
 
 .advantages {
@@ -175,12 +188,16 @@ ol {
 }
 
 .advantages-list {
+  display: flex;
+  gap: 24px;
 }
 
 .advantages-item {
+  width: calc((1128px - 3 * 24px) / 4);
 }
 
 .advantages-subtitle {
+  margin-bottom: 8px;
 }
 
 .advantages-item-text {
@@ -188,22 +205,32 @@ ol {
 
 .team {
   background-color: #f4f4fd;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .team-title {
   text-transform: capitalize;
   display: block;
-  margin: 0 auto;
-  padding-top: 120px;
-  padding-bottom: 72px;
+  margin: 0 auto 72px;
 }
 
 .team-list {
-  padding-bottom: 120px;
+  display: flex;
+  gap: 24px;
 }
 
 .team-item {
   background-color: #ffffff;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  width: calc((1128px - 3 * 24px) / 4);
+}
+
+.team-images {
+  margin: 0 auto;
+  margin-bottom: 32px;
 }
 
 .team-subtitle {
@@ -220,21 +247,30 @@ ol {
 }
 
 .portfolio {
+  padding-top: 124px;
+  padding-bottom: 120px;
 }
 
 .portfolio-title {
   text-transform: capitalize;
   display: block;
-  margin: 0 auto;
-  padding-top: 124px;
-  padding-bottom: 68px;
+  margin: 0 auto 68px;
 }
 
 .portfolio-list {
-  padding-bottom: 120px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+}
+
+.portfolio-images {
+  margin: 0 auto;
+  margin-bottom: 32px;
 }
 
 .portfolio-item {
+  border: 1px solid #e7e9fc;
+  width: calc((1128px - 2 * 24px) / 3);
 }
 
 .portfolio-subtitle {
